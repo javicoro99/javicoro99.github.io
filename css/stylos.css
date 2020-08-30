@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@0,400;1,300;1,700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;*/
+html{
+  scroll-behavior: smooth;
+}
+:root{
+ --color-orange: rgba(255, 167, 3, 0.342);;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+ width: 100%;
+ position: fixed;
+ z-index: 10;
+ background: white;
+ box-shadow: 0px 1px 10px lightgrey;
+}
+
+.headerCont{
+  padding: 2.2em 0;
+  margin: 0 auto;
+  max-width: 1000px;
+  line-height: 1em;
+}
+
+#name{
+  float: left;
+  font-size: 2em;
+  font-weight: 300;
+  display: flex;
+  font-family:'Roboto Mono', monospace ;
+  font-style: italic;
+}
+
+#navList{
+  float: right;
+  display: flex;
+
+}
+
+.navMenuListLink{
+  list-style: none;
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+
+li a img{
+  position: relative;
+  bottom: 10px;
+  transition: 1s;
+}
+
+li a img:hover{
+  border-radius: 50%;
+  background:var(--color-orange);
+}
+
+ul li a{
+  letter-spacing: .12em;
+  line-height: 1.5em;
+  background-size: .05em 2px,.05em 2px,2px 1px;
+  text-decoration: none;
+  color:black;
+}
+
+#hero{
+  padding: 19em 0;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#hero h1 {
+  font-size: 3em;
+}
+#hero h1 a{
+  color:orange;
+  text-decoration: none;
+  transition: 1s;
+}
+
+#hero h1 a:hover{
+  text-shadow: 2px 1px orangered;
+}
+
+#hero h3{
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#projects{
+  margin-bottom: 10%;
+  padding-top: 10% ;
+}
+#project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  text-align: center;
+  
+}
+.project-image {
+  height: calc(100% - 4.6rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project {
+  background: white;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border: 0.1px solid lightgray;
+}
+.project p:hover{
+  background: #151515;
+  color: white;
+}
+.project-tile{
+  text-decoration:none;
+}
+.project-title {
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  color:black;
+  text-decoration-line: underline;
+  text-decoration-color: orange;
+}
+
+.projectButtom{
+  text-decoration: none;
+}
+
+.projectButtomCont{
+  color: #151515;
+  text-align: center;
+  margin:-5% auto 0 auto;
+  background: white;
+  width: 40%;
+  border: 0.1px solid lightgray;
+  box-shadow: 1px 1px 2px gray;
+  
+}
+.projectButtomCont:hover{
+  background: #151515;
+}
+
+.projectButtomCont p:hover{
+  color:white;
+  text-decoration-color: orange;
+  text-decoration-line:underline;
+}
+
+.projectButtomCont p {
+font-size: 2rem;
+padding: 1% 0 1% 0;
+color: black;
+text-decoration-color: orange;
+text-decoration-line:underline;
+}
+
+#about{
+  max-width: 800px;
+  margin: 3% auto;
+  padding-top:4% ;
+}
+
+#about h2{
+  font-size: 5em;
+  line-height: 2em;
+}
+
+.par {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 0 0 1.5em;
+  font-weight: 300;
+}
+.par > a{
+  color: black;
+  text-decoration-color: orange;
+}
+.par.initialText{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+#designs{
+  max-width: 790px;
+  margin: 3% auto;
+  padding-top: 4%;
+}
+
+#designs h2{
+  font-size: 5em;
+  line-height: 2em;
+}
+#designs > p{
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 0 0 1.5em;
+  font-weight: 300;
+}
+#designs p > a{
+  color: black;
+  text-decoration-color: orange;
+}
+
+.designsBehance a img{
+  width: 100%;
+  max-width: 700;
+}
+
+#social{
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#socialLinks{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+#socialLinks li{
+margin-left: 50px;
+}
+
+footer{
+  text-align: center;
+
+  width: 100%;
+}
+
+footer p{
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+footer p > a{
+  color: orange;
+  text-decoration-color: orange;
+}
+/* ESTILOS NORMALES (para escritorios muy grandes)
+   ========================================================================= /
+ 
+body { ... }
+p    { ... }
+ 
+/ RESPONSIVE
+   ========================================================================= /
+ 
+/ Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- /
+@media (min-width: 768px) and (max-width: 1199px) { ... }
+ 
+/ Móviles en horizontal o tablets en vertical
+   ------------------------------------------------------------------------- /
+@media (max-width: 767px) { ... }
+ 
+/ Móviles en vertical
+   ------------------------------------------------------------------------- */
+   /* @media (max-width: 480px) { ... } */
+   @media (min-width: 768px) and (max-width: 1199px) { 
+
+    #designs h2{
+      padding-left: 10px;
+    }
+
+    #designs > p{
+      padding-left: 15px;
+    } 
+
+    #about h2{
+      padding-left: 10px;
+    }
+    
+    .par {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+   }
+
+   @media (max-width: 767px) { 
+    #designs h2{
+      padding-left: 10px;
+    }
+
+    #designs > p{
+      padding-left: 15px;
+    } 
+
+    #about h2{
+      padding-left: 10px;
+    }
+    
+    .par {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+   }
+   @media (max-width: 480px) {
+    #navList {
+      margin-top: 10px;
+      margin-bottom: -20px;
+  }
+  #projects {
+    padding-top: 20%;
+  }
+  #about {
+    padding-top: 14%;
+}
+#designs {
+  padding-top: 14%;
+}
+#hero {
+  padding: 19em 2px;
+}
+#name{
+  padding-left:10px;
+}
+    }
