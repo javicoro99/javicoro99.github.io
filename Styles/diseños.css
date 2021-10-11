@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Head css */
+.head-container{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #DADADA;
+}
+
+.head-container-text{
+    display: inline;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    transition: color 1s ease;
+}
+
+.head-container-text:hover{
+    color: #FF9900;
+}
+/* nav list */
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list > li {
+    margin: 0px 10px 0px 10px;
+}
+.nav-list > li > a {
+    display: flex;
+    align-content: center;
+}
+.nav-list > li > a > img {
+    transform: scale(0.9);
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: #D5D5D5;
+    color: #444444;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: Nunito;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* Here Start the design page */
+.diseño-container{
+    font-family: Nunito;
+    margin: 50px 30%  50px 20%;
+}
+
+#javicoro99 {
+    background-color: black;
+    z-index: 5;
+}
+#alkapone {
+    z-index: 5;
+}
+#thaylerlogo {
+    z-index: 5;
+}
+.diseño-container > div > a {
+    display: flex;
+    width: 200px;
+    margin-left: -10px;
+    filter: blur(5px);
+    transition: filter 1s;
+}
+
+.diseño-container > div > a > img {
+    width: inherit;
+}
+.diseño-container > div > img {
+    width: 150px;
+    margin: -10px;
+}
+.cadenas {
+    z-index: -1;
+}
+
+.diseño-container-1,
+.diseño-container-2,
+.diseño-container-3{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+}
+
+.diseño-container-1:hover > a,
+.diseño-container-2:hover > a,
+.diseño-container-3:hover > a{
+    filter: blur(0);
+}
+/* Here init the footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.linkfo{
+    margin: 25px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.linkfo > a , .linkfo > span{
+    text-decoration: none;
+    color: #CFCFCF;
+}
+
+.socialicon{
+    display: flex;
+    margin-bottom: 25px;
+    width: 30%;
+    justify-content: space-around;
+    padding: 0px 10% 0px 10%;
+}
+
+.socialicon > img{
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 800px) {
+    .diseño-container-1,
+    .diseño-container-2,
+    .diseño-container-3{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .diseño-container > div > img {
+        margin: 50px;
+    }
+    .Cadenas{
+        display: none;
+    }
+    .diseño-container > div > a{
+        display: none;
+    }
+    .nav-list{
+        visibility: hidden;
+    }
+    #linkd{
+        margin-left: 25px;
+    }
+    #Twitter{
+        margin-left: 25px;
+    }
+}

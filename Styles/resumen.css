@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-color: #d4aa70 #e4e4e4;
+    scrollbar-width: thin;
+}
+
+/* Head css */
+.head-container{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #DADADA;
+}
+
+.head-container-text{
+    display: inline;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    transition: color 1s ease;
+}
+
+.head-container-text:hover{
+    color: #FF9900;
+}
+/* nav list */
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list > li {
+    margin: 0px 10px 0px 10px;
+}
+.nav-list > li > a {
+    display: flex;
+    align-content: center;
+}
+.nav-list > li > a > img {
+    transform: scale(0.9);
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: #D5D5D5;
+    color: #444444;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-family: Nunito;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+/* Resumen */
+
+.resumen{
+    font-family: Nunito;
+    margin: 50px 30%  50px 20%;
+}
+
+.resumen > ul{
+    list-style: none;
+    margin-left: -40px;
+}
+
+.resumen > ul > li > p {
+    display: inline;
+}
+.resumen > ul > li::before {
+    content: '';
+    width: 50%;
+    position: absolute;
+    margin-top: 20px;
+    height: 0.1em;
+    background-color: lightsalmon;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.resumen > ul > li {
+    overflow: hidden;
+  }
+  
+.resumen > ul > li::before {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+.resumen > ul > li:hover::before{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+/* Here init the footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.linkfo{
+    margin: 25px;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.linkfo > a , .linkfo > span{
+    text-decoration: none;
+    color: #CFCFCF;
+}
+
+.socialicon{
+    display: flex;
+    margin-bottom: 25px;
+    width: 30%;
+    justify-content: space-around;
+    padding: 0px 10% 0px 10%;
+}
+
+.socialicon > img{
+    cursor:pointer;
+}
+
+
+
+@media only screen and (max-width: 1200px){
+
+}
+@media only screen and (max-width: 800px) {
+    .head-container{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-list{
+        visibility: hidden;
+    }
+    #linkd{
+        margin-left: 25px;
+    }
+    #Twitter{
+        margin-left: 25px;
+    }
+}
