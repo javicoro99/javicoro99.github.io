@@ -9,13 +9,13 @@
 
 /* Head css */
 .head-container{
+    border-bottom: 1px solid #DADADA;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid #DADADA;
 }
 
-.head-container-text{
-    display: inline;
+.head-container-text > a{
+    display: flex;
     font-family: Oswald;
     font-style: normal;
     font-weight: normal;
@@ -27,9 +27,11 @@
     margin-bottom: 10px;
     color: black;
     transition: color 1s ease;
+    text-decoration: none;
 }
 
-.head-container-text:hover{
+.head-container-text:hover > a{
+    text-decoration: none;
     color: #FF9900;
 }
 /* nav list */
