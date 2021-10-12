@@ -67,6 +67,10 @@
     letter-spacing: 0.8em;
 }
 
+.nav-container:hover > a > h2{
+    letter-spacing: 0.8em;
+}
+
 .nav-container-icon > img{
     transform: scale(0.7);
 }
@@ -76,10 +80,6 @@
     position: absolute;
     top: 15%;
 }
-.nav-container.paper > a{
-
-}
-
 
 .nav-container-icon.paper{
     border: 5px solid #333;
@@ -213,6 +213,7 @@ nav > a{
     left: 25%;
     top: 45%;
 }
+
 .nav-container.botella > a{
     display: flex;
     flex-direction: column;
