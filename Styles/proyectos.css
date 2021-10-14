@@ -144,6 +144,9 @@ footer{
         display: flex;
         justify-content: center;
     }
+    .proyecto-container {
+        margin: 10px;
+    }
     .nav-list{
         display: none;
     }
