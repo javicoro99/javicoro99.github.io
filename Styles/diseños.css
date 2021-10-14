@@ -166,6 +166,9 @@ footer{
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .proyecto-container {
+        margin: 10px;
+    }
     .diseño-container > div > img {
         margin: 50px;
     }
@@ -176,7 +179,7 @@ footer{
         display: none;
     }
     .nav-list{
-        visibility: hidden;
+        display: none;
     }
     #linkd{
         margin-left: 25px;

@@ -156,7 +156,7 @@ footer{
         justify-content: center;
     }
     .nav-list{
-        visibility: hidden;
+        display: none;
     }
     #linkd{
         margin-left: 25px;
